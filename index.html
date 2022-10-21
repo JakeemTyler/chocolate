@@ -1,0 +1,192 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Surprise</title>
+    <style>
+      .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1em;
+      }
+      .card {
+   
+   background: #f1ecb7;
+   height: 180px;
+   margin-bottom: 2em;
+   margin-left: 1.4em;
+   margin-right: 1.2em;
+   margin-top: 1.2em;
+   font-size: xx-large;
+   box-sizing: border-box;
+        padding: 5px;
+        margin: 5px;
+        font-size: medium;
+   border: 3px rgb(186, 0, 0) solid;
+   box-shadow: 5px 5px 5px #d0b23b;
+   border-radius:15px;
+}
+      .box {
+        height: 165px;
+        width: auto;
+      }
+      button {
+        background-color: #990000;
+        color: rgb(255, 255, 255);
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: rgb(154, 21, 21);
+        color: #f9f9f9;
+        text-align: center;
+        font-size: xx-large;
+      }
+      .pixHolder {
+
+text-align: center;
+
+}
+img {
+width: 80px;
+padding-left:  200px;
+margin-top: -25em;
+
+}
+@media screen and (min-width: 600px) {
+    .cards {
+      margin-top: -1em;
+    }
+  
+    .card {
+      flex: 0 1 calc(50% - 0.5em);
+      margin-bottom: 1em;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .cards {
+      margin-top: inherit;
+      margin-bottom: 1em;
+    }
+  
+    .card {
+      flex: 0 1 calc(33% - 1em);
+      margin-bottom: 2em;
+    }
+  }
+
+
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="chocolate.js"></script>
+  </head>
+  <body>
+    <h1>A tasetful surprise!</h1>
+    <p>
+      <button type="button" onclick="toggleAnswers()">Hide/Show Answers</button>
+      <button type="button" onclick="highlightRandomQuestion()">
+        Highlight Random Question
+      </button>
+    </p>
+
+    <section class="cards">
+
+
+    <article class="card">
+      <div class="box"> 1
+        <p class="question">Plain Milk</p>
+        <img src="plain3.jpeg">
+        <p class="answer">110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+    </article>
+
+    <article class="card">
+
+      <div class="box"> 2
+        <p class="question">Plain Dark</p>
+        <img src="plaindark.jpeg">
+        <p class="answer">100 calories, smooth dark chocolate, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+    </article>
+
+    <article class="card">
+
+      <div class="box">3
+        <p class="question">Plain Hybird</p>
+        <img src="plaindark2.jpeg">
+        <p class="answer">105 calories, smooth milk chocolate and dark chocolate side by side, <br> ingredients: cocoa butter, milk, sugar</p>
+      </div>
+    </article>
+
+    <article class="card">
+
+      <div class="box">4
+        <p class="question">Nut Butter Cup</p>
+        <img src="nutbutter2.jpeg">
+        <p class="answer">130 calories, smooth milk chocolate, peanut butter filling, <br>ingredients: cocoa butter, milk, sugar</p>
+      </div>
+    </article>
+
+<article class="card">
+      <div class="box"> 5
+        <p class="question">Bailey's Cup</p>
+        <img src="baileys1.jpeg">
+        <p class="answer">90 calories, smooth milkchocolate with Bailey's Irish Cream filling, <br>ingredients: cocoa butter, milk, sugar, Bailey's Cream filling</p>
+      </div>
+</article>
+
+<article class="card">
+      <div class="box">6
+        <p class="question">Rum Barrel</p>
+        <img src="rum.jpeg">
+        <p class="answer">110 calories, smooth dark chocolate with rum-coconut filling, <br>ingredients: cocoa butter, milk, sugar, rum, coconut</p>
+      </div>
+</article>
+
+<article class="card">
+
+      <div class="box">7
+        <p class="question">Orange Fondant</p>
+        <img src="orange.jpeg">
+        <p class="answer">125 calories, dark chocolate with orange fondant filling, <br> ingredients: cocoa butter, milk, sugar, orange cream, orange zest</p>
+      </div>
+</article>
+
+<article class="card">
+      <div class="box"> 8
+        <p class="question">Cappucinno Cup</p>
+        <img src="coffeecup.jpeg">
+        <p class="answer">130 calories, dark chocolate with coffee cream filling, <br> ingredients: cocoa butter, milk, sugar, coffee-vanilla cream,
+            grated coffee beans</p>
+      </div>
+</article>
+
+<article class="card">
+      <div class="box">9
+        <p class="question">Pistachio Diamond</p>
+        <img src="pistachiocup.jpeg">
+        <p class="answer">140 calories, milk chocolate, almond butter filling, <br> large pistachio, filling: cocoa butter, milk, sugar, nut butter,
+            pistachio</p>
+      </div>
+</article>
+
+<article class="card">
+      <div class="box">10
+        <p class="question">Toffee Crunch</p>
+        <img src="toffeecrunch.jpeg">
+        <p class="answer"> 130 calories, dark chocolate, soft toffee filling, <br> rock salt and peanut brittle, ingredients: cocoa butter, milk, sugar, 
+            toffee, salt, toffee brittle</p>
+      </div>
+</article>
+    </div>
+    </section>
+  </body>
+</html>
